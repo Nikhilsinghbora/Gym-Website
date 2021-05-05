@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anon's Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0px;
+        height: auto;
+        padding: 0px;
+        background: url('img/people-2604149_1920.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-family: 'Baloo Bhaina 2', cursive;
+        /* width: 100%; */
+       
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 13px;
+        left: 34px;
+
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 23px;
+        color: silver;
+    }
+
+    .left img {
+        width: 136px;
+        height: 103px;
+        /* filter: invert(100%);for changing logo colour */
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 752px;
+        margin: 12px auto;
+        position: absolute;
+        left: 705px;
+        top: 2px;
+
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 34px;
+        top: 13px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 26px;
+        font-size: 25px;
+
+    }
+
+    .navbar li a:hover {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: black;
+        padding: 4px 13px;
+        /* border: 2px solid black; */
+        border-radius: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        font-family: 'Baloo Bhaina 2', cursive;
+
+    }
+
+    .navbar li .active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .btn:hover {
+        color: rgb(179, 173, 173);
+    }
+
+    .btn:hover {
+        background-color: white
+    }
+
+    .btn:active {
+        background-color: white;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .container {
+        border: 5px solid white;
+        margin: 355px 107px;
+        padding: 89px 51px;
+        border-radius: 34px;
+        float: left;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 456px;
+        /* padding: 2px; */
+        margin: 21px auto;
+        border-radius: 20px;
+        font-size: 25px;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 181px;
+        margin: auto;
+        background: #aed6e3;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img\unnamed.png" alt="AnonFitness">
+            <div>Anon Fitness</div>
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym now!</h1>
+        <form action="noaction.php">
+            <ul>
+                <div class="form-group">
+                    <input type="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="pnone-number" placeholder="Contact number">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email">
+                </div>
+                <button class="btn">SUBMIT</button>
+            </ul>
+        </form>
+    </div>
+
+</body>
+
+</html>
